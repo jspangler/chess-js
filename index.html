@@ -1,0 +1,163 @@
+<html>
+<head>
+	<script type="text/javascript" src="js/class.js"></script>
+	<script type="text/javascript" src="js/helpers.js"></script>
+	
+	<script type="text/javascript" src="js/pieces/_piece.js"></script>
+	<script type="text/javascript" src="js/pieces/bishop.js"></script>
+	<script type="text/javascript" src="js/pieces/king.js"></script>
+	<script type="text/javascript" src="js/pieces/knight.js"></script>
+	<script type="text/javascript" src="js/pieces/pawn.js"></script>
+	<script type="text/javascript" src="js/pieces/prince.js"></script>
+	<script type="text/javascript" src="js/pieces/queen.js"></script>
+	<script type="text/javascript" src="js/pieces/rook.js"></script>
+	
+	<script type="text/javascript" src="js/board.class.js"></script>
+	<script type="text/javascript" src="js/chess.class.js"></script>
+	<script type="text/javascript" src="js/chess.prince.js"></script>
+	<script type="text/javascript" src="js/chess.regular.js"></script>
+	<script type="text/javascript">	
+	var CHESS;
+	
+	window.onload = function() {
+		CHESS = new PrinceChess();	
+	}
+	</script>
+	<style>
+	br {
+		clear: both;
+	}
+	
+	#board {
+		margin: 40px;
+		float: left;	
+	}
+	
+	#board > div {
+		border: 1px solid black;
+		height: 60px;
+		width: 60px;
+		float: left;
+	}
+	
+	#board .even {
+		background: white;
+	}
+	
+	#board .odd {
+		background: black;
+	}
+	
+	#board .possible {
+		background: pink;
+	}
+	
+	.piece {
+		width: 80%;
+		height: 80%;
+		margin-left: 10%;
+		margin-top: 10%;
+		background-size: 150%;
+		background-repeat: no-repeat;
+	}
+	
+	/*******************************************/
+	.pawn {
+		background-image: url(images/pawns.png);
+	}
+	
+	.pawn.bottom {
+		background-position: 6px;
+	}
+	
+	.pawn.top {
+		background-position: -32px;
+	}
+	
+	/*******************************************/
+	.rook {
+		background-image: url(images/rooks.png);
+	}
+	
+	.rook.bottom {
+		background-position: 10px;
+	}
+	
+	.rook.top {
+		background-position: -32px;
+	}
+	
+	/*******************************************/
+	.bishop {
+		background-image: url(images/bishops.png);
+	}
+	
+	.bishop.bottom {
+		background-position: 10px;
+	}
+	
+	.bishop.top {
+		background-position: -32px;
+	}
+	
+	/*******************************************/
+	.king {
+		background-image: url(images/kings.png);
+	}
+	
+	.king.bottom {
+		background-position: 10px;
+	}
+	
+	.king.top {
+		background-position: -32px;
+	}
+	
+	/*******************************************/
+	.queen {
+		background-image: url(images/queens.png);
+	}
+	
+	.queen.bottom {
+		background-position: 10px;
+	}
+	
+	.queen.top {
+		background-position: -32px;
+	}
+	
+	/*******************************************/
+	.knight {
+		background-image: url(images/knights.png);
+	}
+	
+	.knight.bottom {
+		background-position: 10px;
+	}
+	
+	.knight.top {
+		background-position: -32px;
+	}
+	
+	/*******************************************/
+	.prince {
+		background-image: url(images/princes.png);
+	}
+	
+	.prince.bottom {
+		background-position: 10px;
+	}
+	
+	.prince.top {
+		background-position: -32px;
+	}
+	
+	div.piece.active {
+		background-color: gray;
+	}
+	</style>
+</head>
+<body>
+	<div id="board"></div>	
+</body>
+</html>

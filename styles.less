@@ -1,0 +1,49 @@
+br {
+	clear: both;
+}
+
+#board {
+	border: 1px solid black;
+	margin: 40px;
+	float: left;	
+	
+	> div {
+		height: 60px;
+		width: 60px;
+		float: left;
+		
+		&.even {
+			background: white;
+		}
+		
+		&.odd {
+			background: black;
+		}
+	}
+}
+
+
+.piece {
+	
+	&.active {
+		background-color: gray;
+	}
+	
+	.pawn {
+		width: 80%;
+		height: 80%;
+		margin-left: 10%;
+		margin-top: 10%;
+		background-image: url(images/pawns.png);
+		background-size: 150%;
+		background-repeat: no-repeat;
+		
+		&.black {
+			background-position: 6px;
+		}
+		
+		&.white {
+			background-position: -32px;
+		}
+	}
+} // end of .piece
