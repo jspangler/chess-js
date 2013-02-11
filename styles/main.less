@@ -1,0 +1,140 @@
+br {
+	clear: both;
+}
+
+#board {
+	margin: 40px;
+	float: left;
+	
+	> div {
+		border: 1px solid black;
+		height: 60px;
+		width: 60px;
+		float: left;
+	}	
+	
+	.even {
+		background: white;
+	}
+
+	.odd {
+		background: black;
+	}
+	
+	.possible {
+		background: pink;
+	}
+	
+	
+}
+
+
+.piece {
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
+	margin-top: 10%;
+	background-size: 150%;
+	background-repeat: no-repeat;
+	
+	&.active {
+		background-color: gray;
+	}
+}
+
+/*******************************************/
+.pawn {
+	background-image: url(/ui/js/chess-js/images/pawns.png);
+	
+	&.bottom {
+		background-position: 6px;
+	}
+	
+	&.top {
+		background-position: -32px;
+	}
+}
+
+
+/*******************************************/
+.rook {
+	background-image: url(/ui/js/chess-js/images/rooks.png);
+	
+	&.bottom {
+		background-position: 10px;
+	}
+	
+	&.top {
+		background-position: -32px;
+	}
+}
+
+
+/*******************************************/
+.bishop {
+	background-image: url(/ui/js/chess-js/images/bishops.png);
+	
+	&.bottom {
+		background-position: 10px;
+	}
+	
+	&.top {
+		background-position: -32px;
+	}
+}
+
+
+/*******************************************/
+.king {
+	background-image: url(/ui/js/chess-js/images/kings.png);
+	
+	&.bottom {
+		background-position: 10px;
+	}
+	
+	&.top {
+		background-position: -32px;
+	}
+}
+
+
+/*******************************************/
+.queen {
+	background-image: url(/ui/js/chess-js/images/queens.png);
+	
+	&.bottom {
+		background-position: 10px;
+	}
+	
+	&.top {
+		background-position: -32px;
+	}
+}
+
+
+/*******************************************/
+.knight {
+	background-image: url(/ui/js/chess-js/images/knights.png);
+	
+	&.bottom {
+		background-position: 10px;
+	}
+	
+	&.top {
+		background-position: -32px;
+	}
+}
+
+
+/*******************************************/
+.prince {
+	background-image: url(/ui/js/chess-js/images/princes.png);
+	
+	&.bottom {
+		background-position: 10px;
+	}
+	
+	&.top {
+		background-position: -32px;
+	}
+}
